@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="flex">
+        <div class="logo">Lucas<span>.</span></div>
+        <nav>
+          <ul class="flex">
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Service</a></li>
+            <li><a href="#project">Portfolio</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+          <div id="search" class="flex">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="Search..." />
+          </div>
+        </nav>
+      </header>
+
+      <div class="main flex">
+        <div class="main-one">
+          <h1>Hi! I'm Lucas</h1>
+          <span class="auto">Student</span>
+          <p>
+            Developer passionate about simple solutions to difficult problems. Enthusiast of agile methods, flexible environments, and continuous delivery.
+          </p>
+          <a href="https://www.linkedin.com/in/lucas-moreira-504887182/" target="_blank"><button>Hire Me</button></a>
+        </div>
+        <div class="main-two">
+          <img src="./Images/4.png" alt="" />
+        </div>
+      </div>
+
+      <section class="projects" id="project">
+        <h1>My Awesome <br /><span>Projects</span></h1>
+        <p>
+            New challenges are always a source of motivation for me, so I always enjoy having new projects underway. See some of the applications I've dedicated my time to.
+        </p>
+        <a href="CurriculoGitLink.pdf" download="CV Lucas Moreira"><button class="button-cv">Download CV</button></a>
+        <div class="projects-div flex div-1">
+          <img src="./Images/Projects/5.png" alt="" />
+          <h3>E-commerce Website</h3>
+          <img src="e-commerce.png" id="project-image" alt="preview image"/>
+          <p>
+            Site criado para testar as funcionalidades de um e-commerce
+          </p>
+          <a href="https://e-commerce-landing-page-eight.vercel.app/" target="_blanl"><button id="live-preview">Live Preview</button></a>
+        </div>
+        <div class="projects-div flex div-2">
+          <img src="./Images/Projects/6.png" alt="" />
+          <h3>Blog</h3>
+          <img id="project-image" src="RocketBlog.png" alt="Preview image" />
+          <p>
+            Blog com intuito de ajudar iniciantes com dicas da área de tecnologia
+          </p>
+          <a target="_blank" href="https://lukavmm.github.io/Rocket-blog/"><button id="live-preview" >Live Preview</button></a>
+        </div>
+        <div class="projects-div flex div-3">
+          <img src="./Images/Projects/7.png" alt="" />
+          <h3>8 Ball Game</h3>
+          <img src="8ballgame.png" id="project-image" alt="Preview image" />
+          <p>
+            Jogo de perguntas e respostas visto em Stranger Things
+          </p>
+          <a href="https://lukavmm.github.io/Magic-8-ball-/" target="_blank"><button id="live-preview">Live Preview</button></a>
+        </div>
+      </section>
+      <br /><br />
+
+      <section class="about flex" id="about">
+        <div class="about-one">
+          <h1>About me</h1>
+          <span>Lucas Moreira</span>
+          <p>
+            I am always seeking knowledge day by day. I can quickly learn what is needed to keep the process going. I believe that we always need to learn, think outside the box and get out of the comfort zone.
+          </p>
+          <div class="btns">
+            <a href="CurriculoGitLink.pdf" download="CV Lucas Moreira"><button>Download CV</button></a>
+            <a href="https://github.com/lukavmm" target="_blank"><button>Github</button></a>
+          </div>
+        </div>
+        <div class="about-two">
+        <img src="" alt="" /><!-- Imagem para adição no futuro-->
+        </div>
+      </section>
+      <br /><br /><br />
+
+      <section class="contact" id="contact">
+        <h1>Let Us <span>Talk!</span></h1>
+        <div class="box flex">
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Name.." />
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <input type="email" placeholder="Email.." />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="53"
+            rows="5"
+            placeholder="Enter your Message here...."
+          ></textarea>
+          <div>
+            <input type="submit" class="send" value="Send" />
+          </div>
+        </div>
+      </section>
+      <footer class="flex" id="footer">
+        <div class="copy">&copy Lukavmm</div>
+        <div class="social">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <a href="https://wa.me/5521977040677" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <i class="fa-solid fa-phone"></i>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto", {
+        strings: ["Student", "Front-end Dev", "IT Lover"],
+        typeSpeed: 60,
+        backSpeed: 80,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
